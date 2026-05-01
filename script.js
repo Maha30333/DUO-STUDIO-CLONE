@@ -89,6 +89,17 @@ setupNavScrolling();
 var menuToggle = document.getElementById("menu-toggle");
 var mobileNav = document.getElementById("mobile-nav");
 var mobileNavClose = document.getElementById("mobile-nav-close");
+// Nav links ko select karein
+var navLinks = document.querySelectorAll(".mobile-nav-links a");
+
+// Har link par click event lagayen
+navLinks.forEach(function(link) {
+    link.addEventListener("click", function() {
+        // Menu ko band kar dein
+        mobileNav.classList.remove("open");
+        menuToggle.classList.remove("active");
+    });
+});
 
 if (menuToggle && mobileNav) {
     menuToggle.addEventListener("click", function () {
@@ -105,6 +116,7 @@ if (mobileNavClose && mobileNav) {
 }
 
 // ========== CURSOR (ALL SCREENS) ==========
+
 var crsr = document.querySelector(".cursor");
 document.addEventListener("mousemove", function (dets) {
     if (crsr) {
@@ -187,5 +199,5 @@ if (window.innerWidth > 768) {
         });
     });
 }
-     
+
 
