@@ -709,11 +709,13 @@ html, body {
     /* Jab Locomotive active na ho (Mobile/Tablet par) */
 @media (max-width: 1024px) {
    body{
-    cursor: pointer;
+    cursor: pointer !important;
+
    }
     .main {
         overflow-x: hidden;
         overflow-y: auto !important;
+        /* cursor: pointer ; */
     }
     html, body {
         overflow-x: hidden;
@@ -1026,7 +1028,7 @@ html, body {
 
     .page2 h1 {
         font-size: 11vw;
-            margin-left: 24vw;
+
     }
 
     .page2-left h2 {
