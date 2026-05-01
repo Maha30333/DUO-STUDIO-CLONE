@@ -708,6 +708,9 @@ html, body {
 @media (max-width: 1029px) {
     /* Jab Locomotive active na ho (Mobile/Tablet par) */
 @media (max-width: 1024px) {
+   body{
+    cursor: pointer;
+   }
     .main {
         overflow-x: hidden;
         overflow-y: auto !important;
@@ -721,9 +724,7 @@ html, body {
     .page1 {
         padding-top: 18vw;
     }
-    .page1 h1 {
 
-    }
     .page1 video {
         height: 50vh;
     }
@@ -808,6 +809,7 @@ html, body {
     .cursor {
         height: 20px;
         width: 20px;
+        display: npne;
     }
 
     .mouseeffect {
@@ -833,7 +835,7 @@ html, body {
 
     .page1 h1 {
         font-size: 8vw;
-        margin-left: 12vw;
+        margin-left: 24vw;
     }
 
     .page1 h2 {
@@ -1009,23 +1011,22 @@ html, body {
         font-size: 22px;
     }
 }
-@media (max-width: 600px) {
 
-}
 /* Small mobile */
 @media (max-width: 480px) {
     .page1 h1,
     .page1 h2 {
-        font-size: 7vw;
-         margin-left: 18vw;
+        font-size: 6vw;
+
     }
 
-    /* .page1 h2 {
-        margin-left: 8vw;
-    } */
+    .page1 h2 {
+        margin-left: 20vw;
+    }
 
     .page2 h1 {
         font-size: 11vw;
+            margin-left: 24vw;
     }
 
     .page2-left h2 {
